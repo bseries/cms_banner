@@ -1,0 +1,27 @@
+<article class="view-<?= $this->_config['controller'] . '-' . $this->_config['template'] ?>">
+	<h1 class="alpha"><?= $this->title($t('Banner')) ?></h1>
+
+	<?=$this->form->create($item) ?>
+		<?= $this->form->field('group', ['type' => 'text', 'label' => $t('Group')]) ?>
+
+		<div class="media-attachment use-media-attachment-direct">
+			<?= $this->form->label('BannerCoverMediaId', $t('Medium')) ?>
+			<?= $this->form->hidden('cover_media_id') ?>
+			<div class="selected"></div>
+			<?= $this->html->link($t('select'), '#', ['class' => 'button select']) ?>
+		</div>
+
+		<?= $this->form->field('title', ['type' => 'text', 'label' => $t('Title')]) ?>
+
+		<?= $this->form->field('body', [
+			'type' => 'textarea',
+			'label' => $t('Text'),
+			'wrap' => ['class' => 'body use-editor editor-basic editor-link']
+		]) ?>
+
+		<?= $this->form->field('url', ['type' => 'url', 'label' => $t('Link')]) ?>
+		<div class="help"><?= $t('Provide an URL to make the banner clickable.') ?></div>
+
+		<?= $this->form->button($t('save'), ['type' => 'submit', 'class' => 'button large']) ?>
+	<?=$this->form->end() ?>
+</article>
