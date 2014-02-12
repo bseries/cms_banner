@@ -36,7 +36,7 @@ $dateFormatter = new IntlDateFormatter(
 							<?= $this->media->image($version->url('http'), ['class' => 'media']) ?>
 						<?php endif ?>
 					<td><?= $item->title ?: '–' ?>
-					<td><?= $item->group ?>
+					<td><?= $item->category ?>
 					<td>
 						<?php $date = DateTime::createFromFormat('Y-m-d H:i:s', $item->created, new DateTimeZone('Europe/Berlin')) ?>
 						<time datetime="<?= $date->format(DateTime::W3C) ?>"><?= $dateFormatter->format($date) ?></time>
