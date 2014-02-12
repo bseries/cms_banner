@@ -35,7 +35,7 @@ $dateFormatter = new IntlDateFormatter(
 						<?php if (($media = $item->cover()) && ($version = $media->version('fix3'))): ?>
 							<?= $this->media->image($version->url('http'), ['class' => 'media']) ?>
 						<?php endif ?>
-					<td><?= $item->title ?>
+					<td><?= $item->title ?: '–' ?>
 					<td><?= $item->group ?>
 					<td>
 						<?php $date = DateTime::createFromFormat('Y-m-d H:i:s', $item->created, new DateTimeZone('Europe/Berlin')) ?>

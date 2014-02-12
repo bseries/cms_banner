@@ -16,7 +16,7 @@ use cms_media\models\Media;
 
 extract(Message::aliases());
 
-Panes::register('cms_banner', 'projects', [
+Panes::register('cms_banner', 'banners', [
 	'title' => $t('Banners'),
 	'group' => Panes::GROUP_AUTHORING,
 	'url' => ['controller' => 'banners', 'library' => 'cms_banner', 'admin' => true]

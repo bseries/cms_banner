@@ -47,6 +47,13 @@ class Banners extends \cms_core\models\Base {
 				'message' => 'Ein Medium muss ausgewählt sein.'
 			]
 		];
+		$model->validates['group'] = [
+			[
+				'notEmpty',
+				'on' => ['create', 'update'],
+				'message' => 'Der Banner muss einer Gruppe zugewiesen sein.'
+			]
+		];
 	}
 }
 

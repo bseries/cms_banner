@@ -29,7 +29,7 @@ class BannersController extends \lithium\action\Controller {
 	public function admin_add() {
 		extract(Message::aliases());
 
-		$item = Banners::create();
+		$item = Banners::create(['group' => 'default']);
 
 		if ($this->request->data) {
 			if ($item->save($this->request->data)) {
