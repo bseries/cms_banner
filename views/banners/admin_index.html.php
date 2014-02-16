@@ -3,7 +3,8 @@
 $dateFormatter = new IntlDateFormatter(
 	'de_DE',
 	IntlDateFormatter::SHORT,
-	IntlDateFormatter::SHORT
+	IntlDateFormatter::SHORT,
+	'Europe/Berlin'
 );
 
 ?>
@@ -38,10 +39,10 @@ $dateFormatter = new IntlDateFormatter(
 					<td><?= $item->title ?: '–' ?>
 					<td><?= $item->category ?>
 					<td>
-						<?php $date = DateTime::createFromFormat('Y-m-d H:i:s', $item->created, new DateTimeZone('Europe/Berlin')) ?>
+						<?php $date = DateTime::createFromFormat('Y-m-d H:i:s', $item->created) ?>
 						<time datetime="<?= $date->format(DateTime::W3C) ?>"><?= $dateFormatter->format($date) ?></time>
 					<td>
-						<?php $date = DateTime::createFromFormat('Y-m-d H:i:s', $item->modified, new DateTimeZone('Europe/Berlin')) ?>
+						<?php $date = DateTime::createFromFormat('Y-m-d H:i:s', $item->modified) ?>
 						<time datetime="<?= $date->format(DateTime::W3C) ?>"><?= $dateFormatter->format($date) ?></time>
 					<td>
 						<nav class="actions">
