@@ -2,7 +2,7 @@
 	<h1 class="alpha"><?= $this->title($t('Banner')) ?></h1>
 
 	<?=$this->form->create($item) ?>
-		<?= $this->form->field('category', ['type' => 'text', 'label' => $t('Category')]) ?>
+		<?= $this->form->field('category', ['type' => 'text', 'label' => $t('Category'), 'value' => $item->category ?: 'default']) ?>
 		<div class="help"><?= $t('Category can be an abstract name by which you want to group banners or indicate the location of the banner group on the site.') ?></div>
 
 		<div class="media-attachment use-media-attachment-direct">
