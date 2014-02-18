@@ -19,7 +19,11 @@ extract(Message::aliases());
 Panes::register('cms_banner', 'banners', [
 	'title' => $t('Banners'),
 	'group' => Panes::GROUP_AUTHORING,
-	'url' => ['controller' => 'banners', 'library' => 'cms_banner', 'admin' => true]
+	'url' => $base = ['controller' => 'banners', 'library' => 'cms_banner', 'admin' => true],
+	'actions' => [
+		$t('List Banners') => ['action' => 'index'] + $base,
+		$t('New Banner') => ['action' => 'add'] + $base
+	]
 ]);
 Media::registerDependent('cms_banner\models\Banners', [
 	'medium' => 'direct'

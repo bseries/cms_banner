@@ -11,10 +11,6 @@ $dateFormatter = new IntlDateFormatter(
 <article class="view-<?= $this->_config['controller'] . '-' . $this->_config['template'] ?>">
 	<h1 class="alpha"><?= $t('Banners') ?></h1>
 
-	<nav class="actions">
-		<?= $this->html->link($t('new banner'), ['action' => 'add', 'library' => 'cms_banner'], ['class' => 'button']) ?>
-	</nav>
-
 	<?php if ($data->count()): ?>
 		<table>
 			<thead>
