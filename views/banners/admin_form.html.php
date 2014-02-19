@@ -1,5 +1,18 @@
+<?php
+
+$title = [
+	'action' => ucfirst($this->_request->action === 'add' ? $t('creating') : $t('editing')),
+	'title' => $item->title ?: $t('untitled'),
+	'object' => [ucfirst($t('banner')), ucfirst($t('banners'))]
+];
+$this->title("{$title['title']} - {$title['object'][1]}");
+
+?>
 <article class="view-<?= $this->_config['controller'] . '-' . $this->_config['template'] ?>">
-	<h1 class="alpha"><?= $this->title($t('Banner')) ?></h1>
+	<h1 class="alpha">
+		<span class="action"><?= $title['action'] ?></span>
+		<span class="title"><?= $title['title'] ?></span>
+	</h1>
 
 	<?=$this->form->create($item) ?>
 		<?= $this->form->field('category', ['type' => 'text', 'label' => $t('Category'), 'value' => $item->category ?: 'default']) ?>
