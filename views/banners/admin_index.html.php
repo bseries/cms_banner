@@ -23,7 +23,7 @@
 					<td class="flag"><?= ($item->is_published ? '✓' : '╳') ?>
 					<td>
 						<?php if (($media = $item->cover()) && ($version = $media->version('fix3'))): ?>
-							<?= $this->media->image($version->url('http'), ['class' => 'media']) ?>
+							<?= $this->media->image($version, ['class' => 'media']) ?>
 						<?php endif ?>
 					<td class="emphasize"><?= $item->title ?: '–' ?>
 					<td><?= $item->category ?>
