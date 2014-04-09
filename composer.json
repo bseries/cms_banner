@@ -4,15 +4,14 @@
     "homepage": "http://atelierdisko.de",
     "type": "lithium-library",
     "license": "proprietary",
-    "minimum-stability": "dev",
     "authors": {
       "name": "Atelier Disko",
       "homepage": "http://atelierdisko.de"
     },
     "require": {
         "php": ">=5.5.0",
-        "cms_core": "dev-master",
-        "cms_media": "dev-master",
+        "atelierdisko/cms_core": "dev-master",
+        "atelierdisko/cms_media": "dev-master",
         "uor/li3_flash_message": "dev-master",
         "unionofrad/lithium": "dev-dev",
         "composer/installers": "~1.0"
