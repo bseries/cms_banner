@@ -1,16 +1,20 @@
 {
     "name": "atelierdisko/cms_media",
     "description": "Banner module for bureau.",
+    "homepage": "http://atelierdisko.de",
+    "type": "lithium-library",
     "license": "proprietary",
-    "config": {
-        "vendor-dir": "libraries",
-        "preferred-install": "dist"
+    "authors": {
+      "name": "Atelier Disko",
+      "homepage": "http://atelierdisko.de"
     },
     "require": {
         "php": ">=5.5.0",
         "cms_core": "dev-master",
         "cms_media": "dev-master",
-        "uor/li3_flash_message": "dev-master"
+        "uor/li3_flash_message": "dev-master",
+        "unionofrad/lithium": "dev-dev",
+        "composer/installers": "~1.0"
     },
     "repositories": [
       {
