@@ -1,7 +1,5 @@
 <?php
 
-use cms_core\extensions\cms\Features;
-
 $this->set([
 	'page' => [
 		'type' => 'multiple',
