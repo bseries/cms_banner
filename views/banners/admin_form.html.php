@@ -1,20 +1,19 @@
 <?php
 
-$title = [
-	'action' => ucfirst($this->_request->action === 'add' ? $t('creating') : $t('editing')),
-	'title' => $item->title ?: $t('untitled'),
-	'object' => [ucfirst($t('banner')), ucfirst($t('banners'))]
-];
-$this->title("{$title['title']} - {$title['object'][1]}");
+$this->set([
+	'page' => [
+		'type' => 'single',
+		'title' => $item->title,
+		'empty' => $t('untitled'),
+		'object' => $t('banner')
+	],
+	'meta' => [
+		'is_published' => $item->is_published ? $t('published') : $t('unpublished')
+	]
+]);
 
 ?>
 <article class="view-<?= $this->_config['controller'] . '-' . $this->_config['template'] ?>">
-	<h1 class="alpha">
-		<span class="action"><?= $title['action'] ?></span>
-		<span class="object"><?= $title['object'][0] ?></span>
-		<span class="title" data-untitled="<?= $t('Untitled') ?>"><?= $title['title'] ?></span>
-	</h1>
-
 	<?=$this->form->create($item) ?>
 		<?= $this->form->field('category', ['type' => 'text', 'label' => $t('Category'), 'value' => $item->category ?: 'default']) ?>
 		<div class="help"><?= $t('Category can be an abstract name by which you want to group banners or indicate the location of the banner group on the site.') ?></div>

@@ -16,15 +16,12 @@ use cms_media\models\Media;
 
 extract(Message::aliases());
 
-Panes::register('cms_banner', 'banners', [
-	'title' => $t('Banners'),
-	'group' => Panes::GROUP_AUTHORING,
-	'url' => $base = ['controller' => 'banners', 'library' => 'cms_banner', 'admin' => true],
-	'actions' => [
-		$t('List Banners') => ['action' => 'index'] + $base,
-		$t('New Banner') => ['action' => 'add'] + $base
-	]
+$base = ['controller' => 'banners', 'library' => 'cms_banner', 'admin' => true];
+Panes::registerActions('cms_banner', 'authoring', [
+	$t('List Banners') => ['action' => 'index'] + $base,
+	$t('New Banner') => ['action' => 'add'] + $base
 ]);
+
 Media::registerDependent('cms_banner\models\Banners', [
 	'medium' => 'direct'
 ]);
