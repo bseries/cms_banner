@@ -21,7 +21,7 @@ $this->set([
 			<div class="grid-column-left">
 				<?= $this->form->field('title', ['type' => 'text', 'label' => $t('Title'), 'class' => 'use-for-title']) ?>
 
-				<?= $this->form->field('url', ['type' => 'url', 'label' => $t('Link')]) ?>
+				<?= $this->form->field('url', ['type' => 'url', 'label' => $t('Link'), 'placeholder' => $t('https://foo.com')]) ?>
 				<div class="help"><?= $t('Provide an URL to make the banner clickable.') ?></div>
 			</div>
 			<div class="grid-column-right">
@@ -47,6 +47,7 @@ $this->set([
 			</div>
 		</div>
 		<div class="bottom-actions">
+			<?= $this->html->link($item->is_published ? $t('unpublish') : $t('publish'), ['id' => $item->id, 'action' => $item->is_published ? 'unpublish': 'publish', 'library' => 'cms_banner'], ['class' => 'button large']) ?>
 			<?= $this->form->button($t('save'), ['type' => 'submit', 'class' => 'large save']) ?>
 		</div>
 	<?=$this->form->end() ?>
