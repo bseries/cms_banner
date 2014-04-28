@@ -21,7 +21,11 @@ $this->set([
 			<div class="grid-column-left">
 				<?= $this->form->field('title', ['type' => 'text', 'label' => $t('Title'), 'class' => 'use-for-title']) ?>
 
-				<?= $this->form->field('url', ['type' => 'url', 'label' => $t('Link'), 'placeholder' => $t('https://foo.com')]) ?>
+				<?= $this->form->field('url', [
+					'type' => 'text',
+					'label' => $t('Link'),
+					'placeholder' => $t('https://foo.com/bar or /bar')]
+				) ?>
 				<div class="help"><?= $t('Provide an URL to make the banner clickable.') ?></div>
 			</div>
 			<div class="grid-column-right">
