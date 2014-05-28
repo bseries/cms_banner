@@ -31,7 +31,7 @@ $this->set([
 				<tr data-id="<?= $item->id ?>">
 					<td class="flag"><?= ($item->is_published ? '✓' : '×') ?>
 					<td>
-						<?php if (($media = $item->cover()) && ($version = $media->version('fix3'))): ?>
+						<?php if (($media = $item->cover()) && ($version = $media->version('fix3admin'))): ?>
 							<?= $this->media->image($version, ['class' => 'media']) ?>
 						<?php endif ?>
 					<td class="emphasize"><?= $item->title ?: '–' ?>
