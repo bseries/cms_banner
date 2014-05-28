@@ -23,7 +23,7 @@ Panes::registerActions('cms_banner', 'authoring', [
 ]);
 
 Media::registerDependent('cms_banner\models\Banners', [
-	'medium' => 'direct'
+	'cover' => 'direct'
 ]);
 
 ?>
