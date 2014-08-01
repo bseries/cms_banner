@@ -10,6 +10,10 @@ $this->set([
 ?>
 <article class="view-<?= $this->_config['controller'] . '-' . $this->_config['template'] ?>">
 
+	<div class="top-actions">
+		<?= $this->html->link($t('new banner'), ['action' => 'add', 'library' => 'cms_banner'], ['class' => 'button add']) ?>
+	</div>
+
 	<div class="help">
 		<?= $t('Banners can be used as static banners or - when grouped - as a slideshow anywhere on your site. The name of the group gives you a hint about the location of the banner.') ?>
 		<?= $t('You can set the order of the banners manually by dragging and dropping the rows in the table below.') ?>

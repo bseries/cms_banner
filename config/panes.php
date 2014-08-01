@@ -15,10 +15,9 @@ use lithium\g11n\Message;
 
 extract(Message::aliases());
 
-$base = ['controller' => 'banners', 'library' => 'cms_banner', 'admin' => true];
-Panes::registerActions('cms_banner', 'authoring', [
-	$t('List Banners') => ['action' => 'index'] + $base,
-	$t('New Banner') => ['action' => 'add'] + $base
+Panes::register('authoring.banners', [
+	'title' => $t('Banners'),
+	'url' => ['controller' => 'banners', 'action' => 'index', 'library' => 'cms_banner', 'admin' => true]
 ]);
 
 ?>
