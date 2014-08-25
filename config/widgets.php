@@ -16,7 +16,7 @@ use cms_banner\models\Banners;
 
 extract(Message::aliases());
 
-Widgets::register('cms_banner', 'authoring',  function() use ($t) {
+Widgets::register('authoring',  function() use ($t) {
 	return [
 		'data' => [
 			$t('Banners') => Banners::find('count')
