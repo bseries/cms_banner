@@ -24,7 +24,8 @@ Widgets::register('authoring',  function() use ($t) {
 	];
 }, [
 	'type' => Widgets::TYPE_TABLE,
-	'group' => Widgets::GROUP_DASHBOARD
+	'group' => Widgets::GROUP_DASHBOARD,
+	'weight' => Widgets::WEIGHT_HIGH
 ]);
 
 ?>
