@@ -11,7 +11,7 @@
  */
 
 use lithium\g11n\Message;
-use cms_core\extensions\cms\Widgets;
+use base_core\extensions\cms\Widgets;
 use cms_banner\models\Banners;
 
 extract(Message::aliases());

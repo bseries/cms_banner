@@ -1,6 +1,6 @@
 <?php
 /**
- * Bureau Banner
+ * CMS Banner
  *
  * Copyright (c) 2014 Atelier Disko - All rights reserved.
  *
@@ -12,17 +12,17 @@
 
 namespace cms_banner\models;
 
-class Banners extends \cms_core\models\Base {
+class Banners extends \base_core\models\Base {
 
 	public $belongsTo = [
 		'CoverMedia' => [
-			'to' => 'cms_media\models\Media',
+			'to' => 'base_media\models\Media',
 			'key' => 'cover_media_id'
 		]
 	];
 
 	protected static $_actsAs = [
-		'cms_media\extensions\data\behavior\Coupler' => [
+		'base_media\extensions\data\behavior\Coupler' => [
 			'bindings' => [
 				'cover' => [
 					'type' => 'direct',
@@ -30,8 +30,8 @@ class Banners extends \cms_core\models\Base {
 				]
 			]
 		],
-		'cms_core\extensions\data\behavior\Timestamp',
-		'cms_core\extensions\data\behavior\Sortable' => [
+		'base_core\extensions\data\behavior\Timestamp',
+		'base_core\extensions\data\behavior\Sortable' => [
 			'field' => 'order',
 			'cluster' => []
 		]

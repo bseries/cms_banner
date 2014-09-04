@@ -1,6 +1,6 @@
 <?php
 /**
- * Bureau Banner
+ * CMS Banner
  *
  * Copyright (c) 2014 Atelier Disko - All rights reserved.
  *
