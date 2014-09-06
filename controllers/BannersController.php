@@ -13,8 +13,6 @@
 namespace cms_banner\controllers;
 
 use cms_banner\models\Banners;
-use lithium\g11n\Message;
-use li3_flash_message\extensions\storage\FlashMessage;
 
 class BannersController extends \base_core\controllers\BaseController {
 
