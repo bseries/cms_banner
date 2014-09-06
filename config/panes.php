@@ -17,7 +17,8 @@ extract(Message::aliases());
 
 Panes::register('authoring.banners', [
 	'title' => $t('Banners'),
-	'url' => ['controller' => 'banners', 'action' => 'index', 'library' => 'cms_banner', 'admin' => true]
+	'url' => ['controller' => 'banners', 'action' => 'index', 'library' => 'cms_banner', 'admin' => true],
+	'weight' => 50
 ]);
 
 ?>
