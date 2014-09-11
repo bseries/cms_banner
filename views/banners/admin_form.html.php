@@ -33,7 +33,7 @@ $this->set([
 				<div class="help"><?= $t('Category can be an abstract name by which you want to group banners or indicate the location of the banner group on the site.') ?></div>
 			</div>
 		</div>
-		<div class="grid-row grid-row-last">
+		<div class="grid-row">
 			<div class="grid-column-left">
 				<?= $this->form->field('body', [
 					'type' => 'textarea',
