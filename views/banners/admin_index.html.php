@@ -24,7 +24,7 @@ $this->set([
 			<thead>
 				<tr>
 					<td class="flag"><?= $t('publ.?') ?>
-					<td>
+					<td class="media">
 					<td class="emphasize"><?= $t('Title') ?>
 					<td><?= $t('Group') ?>
 					<td class="date created"><?= $t('Created') ?>
@@ -34,9 +34,11 @@ $this->set([
 				<?php foreach ($data as $item): ?>
 				<tr data-id="<?= $item->id ?>">
 					<td class="flag"><?= ($item->is_published ? '✓' : '×') ?>
-					<td>
+					<td class="media">
 						<?php if (($media = $item->cover()) && ($version = $media->version('fix3admin'))): ?>
-							<?= $this->media->image($version, ['class' => 'media']) ?>
+							<?= $this->media->image($version, [
+								'data-media-id' => $media->id, 'alt' => 'preview'
+							]) ?>
 						<?php endif ?>
 					<td class="emphasize"><?= $item->title ?: '–' ?>
 					<td><?= $item->category ?>
