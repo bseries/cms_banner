@@ -54,6 +54,15 @@ class Banners extends \base_core\models\Base {
 				'message' => 'Der Banner muss einer Kategorie zugewiesen sein.'
 			]
 		];
+
+		if (PROJECT_LOCALE !== PROJECT_LOCALES) {
+			static::bindBehavior('li3_translate\extensions\data\behavior\Translatable', [
+				'fields' => ['title'],
+				'locale' => PROJECT_LOCALE,
+				'locales' => explode(' ', PROJECT_LOCALES),
+				'strategy' => 'inline'
+			]);
+		}
 	}
 }
 
