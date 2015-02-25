@@ -19,7 +19,21 @@ $this->set([
 
 		<div class="grid-row">
 			<div class="grid-column-left">
-				<?= $this->form->field('title', ['type' => 'text', 'label' => $t('Title'), 'class' => 'use-for-title']) ?>
+				<?php if ($item->isTranslated('title')): ?>
+					<?php foreach ($item->translate('title') as $locale => $value): ?>
+						<?= $this->form->field("i18n.title.{$locale}", [
+							'type' => 'text',
+							'label' => $t('Title ({:locale})', compact('locale')),
+							'class' => 'use-for-title'
+						]) ?>
+					<?php endforeach ?>
+				<?php else: ?>
+					<?= $this->form->field('title', [
+						'type' => 'text',
+						'label' => $t('Title'),
+						'class' => 'use-for-title'
+					]) ?>
+				<?php endif ?>
 
 				<?= $this->form->field('url', [
 					'type' => 'text',
