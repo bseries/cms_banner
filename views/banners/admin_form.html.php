@@ -24,7 +24,7 @@ $this->set([
 						<?= $this->form->field("i18n.title.{$locale}", [
 							'type' => 'text',
 							'label' => $t('Title') . ' (' . $this->g11n->name($locale) . ')',
-							'class' => 'use-for-title',
+							'class' => $locale === PROJECT_LOCALE ? 'use-for-title' : null,
 							'value' => $value
 						]) ?>
 					<?php endforeach ?>
@@ -68,7 +68,7 @@ $this->set([
 						<?= $this->form->field("i18n.body.{$locale}", [
 							'type' => 'textarea',
 							'label' => $t('Text') . ' (' . $this->g11n->name($locale) . ')',
-							'wrap' => ['class' => 'body use-editor editor-basic editor-link'],
+							'wrap' => ['class' => 'editor-size--gamma use-editor editor-basic editor-link'],
 							'value' => $value
 						]) ?>
 					<?php endforeach ?>
@@ -76,7 +76,7 @@ $this->set([
 					<?= $this->form->field('body', [
 						'type' => 'textarea',
 						'label' => $t('Text'),
-						'wrap' => ['class' => 'body use-editor editor-basic editor-link']
+						'wrap' => ['class' => 'editor-size--gamma use-editor editor-basic editor-link']
 					]) ?>
 				<?php endif ?>
 			</div>
