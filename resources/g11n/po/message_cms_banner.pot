@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Atelier Disko
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: cms_banner 1.0\n"
+"Report-Msgid-Bugs-To: info@atelierdisko.de\n"
+"POT-Creation-Date: 2015-03-10 17:35+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: config/panes.php:19 config/widgets.php:22
+msgid "Banners"
+msgstr ""
+
+#: views/banners/admin_form.html.php:7
+msgid "untitled"
+msgstr ""
+
+#: views/banners/admin_form.html.php:8
+msgid "banner"
+msgstr ""
+
+#: views/banners/admin_form.html.php:11
+msgid "published"
+msgstr ""
+
+#: views/banners/admin_form.html.php:11
+msgid "unpublished"
+msgstr ""
+
+#: views/banners/admin_form.html.php:26 views/banners/admin_form.html.php:34
+#: views/banners/admin_index.html.php:28
+msgid "Title"
+msgstr ""
+
+#: views/banners/admin_form.html.php:41
+msgid "Medium"
+msgstr ""
+
+#: views/banners/admin_form.html.php:44
+msgid "select"
+msgstr ""
+
+#: views/banners/admin_form.html.php:53
+msgid "Category"
+msgstr ""
+
+#: views/banners/admin_form.html.php:54
+msgid ""
+"Category can be an abstract name by which you want to group banners or "
+"indicate the location of the banner group on the site."
+msgstr ""
+
+#: views/banners/admin_form.html.php:58
+msgid "Link"
+msgstr ""
+
+#: views/banners/admin_form.html.php:59
+msgid "https://foo.com/bar or /bar"
+msgstr ""
+
+#: views/banners/admin_form.html.php:61
+msgid "Provide an URL to make the banner clickable."
+msgstr ""
+
+#: views/banners/admin_form.html.php:70 views/banners/admin_form.html.php:78
+msgid "Text"
+msgstr ""
+
+#: views/banners/admin_form.html.php:88 views/banners/admin_index.html.php:51
+msgid "publish"
+msgstr ""
+
+#: views/banners/admin_form.html.php:88 views/banners/admin_index.html.php:51
+msgid "unpublish"
+msgstr ""
+
+#: views/banners/admin_form.html.php:90
+msgid "save"
+msgstr ""
+
+#: views/banners/admin_index.html.php:6
+msgid "banners"
+msgstr ""
+
+#: views/banners/admin_index.html.php:14
+msgid "new banner"
+msgstr ""
+
+#: views/banners/admin_index.html.php:18
+msgid ""
+"Banners can be used as static banners or - when grouped - as a slideshow "
+"anywhere on your site. The name of the group gives you a hint about the "
+"location of the banner."
+msgstr ""
+
+#: views/banners/admin_index.html.php:19
+msgid ""
+"You can set the order of the banners manually by dragging and dropping the "
+"rows in the table below."
+msgstr ""
+
+#: views/banners/admin_index.html.php:26
+msgid "publ.?"
+msgstr ""
+
+#: views/banners/admin_index.html.php:29
+msgid "Group"
+msgstr ""
+
+#: views/banners/admin_index.html.php:30
+msgid "Created"
+msgstr ""
+
+#: views/banners/admin_index.html.php:50
+msgid "delete"
+msgstr ""
+
+#: views/banners/admin_index.html.php:52
+msgid "open"
+msgstr ""
+
+#: views/banners/admin_index.html.php:57
+msgid "No items available, yet."
+msgstr ""
