@@ -44,14 +44,14 @@ class Banners extends \base_core\models\Base {
 			[
 				'notEmpty',
 				'on' => ['create', 'update'],
-				'message' => 'Ein Medium muss ausgewählt sein.'
+				'message' => $t('You must select on medium.', ['scope' => 'cms_banner'])
 			]
 		];
 		$model->validates['category'] = [
 			[
 				'notEmpty',
 				'on' => ['create', 'update'],
-				'message' => 'Der Banner muss einer Kategorie zugewiesen sein.'
+				'message' => $t('Need a category.', ['scope' => 'cms_banner'])
 			]
 		];
 

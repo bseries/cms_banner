@@ -19,7 +19,7 @@ extract(Message::aliases());
 Widgets::register('authoring',  function() use ($t) {
 	return [
 		'data' => [
-			$t('Banners') => Banners::find('count')
+			$t('Banners', ['scope' => 'cms_banner']) => Banners::find('count')
 		]
 	];
 }, [
