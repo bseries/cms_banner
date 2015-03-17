@@ -12,6 +12,8 @@
 
 namespace cms_banner\models;
 
+use lithium\g11n\Message;
+
 class Banners extends \base_core\models\Base {
 
 	public $belongsTo = [
@@ -38,6 +40,7 @@ class Banners extends \base_core\models\Base {
 	];
 
 	public static function init() {
+		extract(Message::aliases());
 		$model = static::_object();
 
 		$model->validates['cover_media_id'] = [
