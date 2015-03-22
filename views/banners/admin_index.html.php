@@ -33,7 +33,7 @@ $this->set([
 					<td class="media">
 					<td class="emphasize"><?= $t('Title') ?>
 					<td><?= $t('Group') ?>
-					<td class="date created"><?= $t('Created') ?>
+					<td class="date modified"><?= $t('Modified') ?>
 					<td class="actions">
 			</thead>
 			<tbody class="use-manual-sorting">
@@ -48,9 +48,9 @@ $this->set([
 						<?php endif ?>
 					<td class="emphasize"><?= $item->title ?: '–' ?>
 					<td><?= $item->category ?>
-					<td class="date created">
-						<time datetime="<?= $this->date->format($item->created, 'w3c') ?>">
-							<?= $this->date->format($item->created, 'date') ?>
+					<td class="date modified">
+						<time datetime="<?= $this->date->format($item->modified, 'w3c') ?>">
+							<?= $this->date->format($item->modified, 'date') ?>
 						</time>
 					<td class="actions">
 						<?= $this->html->link($t('delete'), ['id' => $item->id, 'action' => 'delete', 'library' => 'cms_banner'], ['class' => 'button delete']) ?>
