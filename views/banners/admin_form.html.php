@@ -71,18 +71,18 @@ $this->set([
 			<div class="grid-column-left">
 				<?php if ($isTranslated): ?>
 					<?php foreach ($item->translate('body') as $locale => $value): ?>
-						<?= $this->form->field("i18n.body.{$locale}", [
-							'type' => 'textarea',
-							'label' => $t('Text') . ' (' . $this->g11n->name($locale) . ')',
-							'wrap' => ['class' => 'editor-size--gamma use-editor editor-basic editor-link'],
+						<?= $this->editor->field("i18n.body.{$locale}", [
+							'label' => $t('Description') . ' (' . $this->g11n->name($locale) . ')',
+							'size' => 'gamma',
+							'features' => 'minimal',
 							'value' => $value
 						]) ?>
-					<?php endforeach ?>
+				<?php endforeach ?>
 				<?php else: ?>
-					<?= $this->form->field('body', [
-						'type' => 'textarea',
-						'label' => $t('Text'),
-						'wrap' => ['class' => 'editor-size--gamma use-editor editor-basic editor-link']
+					<?= $this->editor->field('body', [
+						'label' => $t('Description'),
+						'size' => 'gamma',
+						'features' => 'minimal'
 					]) ?>
 				<?php endif ?>
 			</div>
