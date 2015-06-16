@@ -7,102 +7,102 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cms_banner 1.0\n"
 "Report-Msgid-Bugs-To: info@atelierdisko.de\n"
-"POT-Creation-Date: 2015-03-17 13:53+0100\n"
-"PO-Revision-Date: 2015-03-10 17:35+0100\n"
-"Last-Translator: Automatically generated\n"
+"POT-Creation-Date: 2015-06-16 14:48+0200\n"
+"PO-Revision-Date: 2015-06-16 14:50+0100\n"
+"Last-Translator: David Persson <davidpersson@gmx.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #: config/panes.php:19 config/widgets.php:22
 msgid "Banners"
-msgstr ""
+msgstr "Banner"
 
-#: models/Banners.php:47
+#: models/Banners.php:57
 msgid "You must select on medium."
-msgstr ""
+msgstr "Es muss ein Medium ausgewählt sein."
 
-#: models/Banners.php:54
+#: models/Banners.php:64
 msgid "Need a category."
-msgstr ""
+msgstr "Benötige eine Kategorie."
 
 #: views/banners/admin_form.html.php:13
 msgid "untitled"
-msgstr ""
+msgstr "ohne Titel"
 
 #: views/banners/admin_form.html.php:14
 msgid "banner"
-msgstr ""
+msgstr "Banner"
 
 #: views/banners/admin_form.html.php:17
 msgid "published"
-msgstr ""
+msgstr "publiziert"
 
 #: views/banners/admin_form.html.php:17
 msgid "unpublished"
-msgstr ""
+msgstr "unpubliziert"
 
 #: views/banners/admin_form.html.php:32 views/banners/admin_form.html.php:40
 #: views/banners/admin_index.html.php:34
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: views/banners/admin_form.html.php:47
-msgid "Medium"
-msgstr ""
+msgid "Cover"
+msgstr "Cover"
 
-#: views/banners/admin_form.html.php:50
-msgid "select"
-msgstr ""
+#: views/banners/admin_form.html.php:58
+msgid "Category"
+msgstr "Kategorie"
 
 #: views/banners/admin_form.html.php:59
-msgid "Category"
-msgstr ""
-
-#: views/banners/admin_form.html.php:60
 msgid ""
 "Category can be an abstract name by which you want to group banners or "
 "indicate the location of the banner group on the site."
 msgstr ""
+"Die Kategorie kann ein abstrakter Name sein, mit dessen Hilfe mehrere Banner "
+"gruppiert werden können oder welcher den Ort der Gruppe innerhalb der Site "
+"anzeigen."
+
+#: views/banners/admin_form.html.php:63
+msgid "Link"
+msgstr "Link"
 
 #: views/banners/admin_form.html.php:64
-msgid "Link"
-msgstr ""
-
-#: views/banners/admin_form.html.php:65
 msgid "https://foo.com/bar or /bar"
-msgstr ""
+msgstr "https://foo.de/bar oder /bar"
 
-#: views/banners/admin_form.html.php:67
+#: views/banners/admin_form.html.php:66
 msgid "Provide an URL to make the banner clickable."
-msgstr ""
+msgstr "Geben Sie eine URL an, um den Banner klickbar zu machen."
 
-#: views/banners/admin_form.html.php:76 views/banners/admin_form.html.php:84
-msgid "Text"
-msgstr ""
+#: views/banners/admin_form.html.php:74 views/banners/admin_form.html.php:82
+msgid "Description"
+msgstr "Beschreibung"
 
-#: views/banners/admin_form.html.php:94 views/banners/admin_index.html.php:57
+#: views/banners/admin_form.html.php:93 views/banners/admin_index.html.php:57
 msgid "publish"
-msgstr ""
+msgstr "publizieren"
 
-#: views/banners/admin_form.html.php:94 views/banners/admin_index.html.php:57
+#: views/banners/admin_form.html.php:93 views/banners/admin_index.html.php:57
 msgid "unpublish"
-msgstr ""
+msgstr "depublizieren"
 
-#: views/banners/admin_form.html.php:96
+#: views/banners/admin_form.html.php:95
 msgid "save"
-msgstr ""
+msgstr "speichern"
 
 #: views/banners/admin_index.html.php:12
 msgid "banners"
-msgstr ""
+msgstr "Banner"
 
 #: views/banners/admin_index.html.php:20
 msgid "new banner"
-msgstr ""
+msgstr "neuer Banner"
 
 #: views/banners/admin_index.html.php:24
 msgid ""
@@ -110,33 +110,38 @@ msgid ""
 "anywhere on your site. The name of the group gives you a hint about the "
 "location of the banner."
 msgstr ""
+"Banner können als statische Banner oder - wenn sie gruppiert sind - als "
+"Slideshow überall innerhalb der Site benutzt werden. Der Name der Gruppe "
+"gibt Hinweis auf den Ort des Banners."
 
 #: views/banners/admin_index.html.php:25
 msgid ""
 "You can set the order of the banners manually by dragging and dropping the "
 "rows in the table below."
 msgstr ""
+"Die Anordnung der Banner kann manuell per Drag 'n Drop der Zeilen in der "
+"Tabelle festgelegt werden."
 
 #: views/banners/admin_index.html.php:32
 msgid "publ.?"
-msgstr ""
+msgstr "publ.?"
 
 #: views/banners/admin_index.html.php:35
 msgid "Group"
-msgstr ""
+msgstr "Gruppe"
 
 #: views/banners/admin_index.html.php:36
-msgid "Created"
-msgstr ""
+msgid "Modified"
+msgstr "Bearbeitet"
 
 #: views/banners/admin_index.html.php:56
 msgid "delete"
-msgstr ""
+msgstr "löschen"
 
 #: views/banners/admin_index.html.php:58
 msgid "open"
-msgstr ""
+msgstr "öffnen"
 
 #: views/banners/admin_index.html.php:63
 msgid "No items available, yet."
-msgstr ""
+msgstr "Es sind noch keine Object verfügbar."
