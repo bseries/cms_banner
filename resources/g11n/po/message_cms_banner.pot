@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cms_banner 1.0\n"
 "Report-Msgid-Bugs-To: info@atelierdisko.de\n"
-"POT-Creation-Date: 2015-03-17 13:53+0100\n"
+"POT-Creation-Date: 2015-06-16 14:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 msgid "Banners"
 msgstr ""
 
-#: models/Banners.php:47
+#: models/Banners.php:57
 msgid "You must select on medium."
 msgstr ""
 
-#: models/Banners.php:54
+#: models/Banners.php:64
 msgid "Need a category."
 msgstr ""
 
@@ -51,48 +51,44 @@ msgid "Title"
 msgstr ""
 
 #: views/banners/admin_form.html.php:47
-msgid "Medium"
+msgid "Cover"
 msgstr ""
 
-#: views/banners/admin_form.html.php:50
-msgid "select"
-msgstr ""
-
-#: views/banners/admin_form.html.php:59
+#: views/banners/admin_form.html.php:58
 msgid "Category"
 msgstr ""
 
-#: views/banners/admin_form.html.php:60
+#: views/banners/admin_form.html.php:59
 msgid ""
 "Category can be an abstract name by which you want to group banners or "
 "indicate the location of the banner group on the site."
 msgstr ""
 
-#: views/banners/admin_form.html.php:64
+#: views/banners/admin_form.html.php:63
 msgid "Link"
 msgstr ""
 
-#: views/banners/admin_form.html.php:65
+#: views/banners/admin_form.html.php:64
 msgid "https://foo.com/bar or /bar"
 msgstr ""
 
-#: views/banners/admin_form.html.php:67
+#: views/banners/admin_form.html.php:66
 msgid "Provide an URL to make the banner clickable."
 msgstr ""
 
-#: views/banners/admin_form.html.php:76 views/banners/admin_form.html.php:84
-msgid "Text"
+#: views/banners/admin_form.html.php:74 views/banners/admin_form.html.php:82
+msgid "Description"
 msgstr ""
 
-#: views/banners/admin_form.html.php:94 views/banners/admin_index.html.php:57
+#: views/banners/admin_form.html.php:93 views/banners/admin_index.html.php:57
 msgid "publish"
 msgstr ""
 
-#: views/banners/admin_form.html.php:94 views/banners/admin_index.html.php:57
+#: views/banners/admin_form.html.php:93 views/banners/admin_index.html.php:57
 msgid "unpublish"
 msgstr ""
 
-#: views/banners/admin_form.html.php:96
+#: views/banners/admin_form.html.php:95
 msgid "save"
 msgstr ""
 
@@ -126,7 +122,7 @@ msgid "Group"
 msgstr ""
 
 #: views/banners/admin_index.html.php:36
-msgid "Created"
+msgid "Modified"
 msgstr ""
 
 #: views/banners/admin_index.html.php:56
