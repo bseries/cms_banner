@@ -17,7 +17,7 @@ $this->set([
 <article>
 
 	<div class="top-actions">
-		<?= $this->html->link($t('new banner'), ['action' => 'add', 'library' => 'cms_banner'], ['class' => 'button add']) ?>
+		<?= $this->html->link($t('banner'), ['action' => 'add', 'library' => 'cms_banner'], ['class' => 'button add']) ?>
 	</div>
 
 	<div class="help">
