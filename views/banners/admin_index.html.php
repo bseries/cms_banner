@@ -34,6 +34,9 @@ $this->set([
 					<td class="emphasize"><?= $t('Title') ?>
 					<td><?= $t('Group') ?>
 					<td class="date modified"><?= $t('Modified') ?>
+					<?php if ($useOwner): ?>
+						<td class="user"><?= $t('Owner') ?>
+					<?php endif ?>
 					<td class="actions">
 			</thead>
 			<tbody class="use-manual-sorting">
@@ -52,6 +55,10 @@ $this->set([
 						<time datetime="<?= $this->date->format($item->modified, 'w3c') ?>">
 							<?= $this->date->format($item->modified, 'date') ?>
 						</time>
+					<?php if ($useOwner): ?>
+						<td class="user">
+							<?= $item->owner()->name ?>
+					<?php endif ?>
 					<td class="actions">
 						<?= $this->html->link($t('delete'), ['id' => $item->id, 'action' => 'delete', 'library' => 'cms_banner'], ['class' => 'button delete']) ?>
 						<?= $this->html->link($item->is_published ? $t('unpublish') : $t('publish'), ['id' => $item->id, 'action' => $item->is_published ? 'unpublish': 'publish', 'library' => 'cms_banner'], ['class' => 'button']) ?>
