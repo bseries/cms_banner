@@ -70,7 +70,9 @@ $this->set([
 			</div>
 			<div class="grid-column-right">
 				<?= $this->form->field('region', [
-					'type' => 'text', 'label' => $t('Region')
+					'type' => 'text',
+					'label' => $t('Region'),
+					'list' => $regions
 				]) ?>
 				<div class="help"><?= $t('Banners in the same region are grouped together.') ?></div>
 

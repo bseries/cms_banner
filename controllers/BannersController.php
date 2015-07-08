@@ -12,6 +12,7 @@
 
 namespace cms_banner\controllers;
 
+use lithium\util\Set;
 use cms_banner\models\Banners;
 
 class BannersController extends \base_core\controllers\BaseController {
@@ -24,6 +25,15 @@ class BannersController extends \base_core\controllers\BaseController {
 
 	use \base_core\controllers\AdminOrderTrait;
 	use \base_core\controllers\AdminPublishTrait;
+
+	protected function _selects($item = null) {
+		$regions = Banners::find('all', [
+			'fields' => ['DISTINCT region as region']
+		]);
+		$regions = Set::extract($regions->data(), '/region');
+
+		return compact('regions');
+	}
 }
 
 ?>
