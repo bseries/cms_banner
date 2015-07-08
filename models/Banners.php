@@ -58,11 +58,11 @@ class Banners extends \base_core\models\Base {
 				'message' => $t('You must select on medium.', ['scope' => 'cms_banner'])
 			]
 		];
-		$model->validates['category'] = [
+		$model->validates['region'] = [
 			[
 				'notEmpty',
 				'on' => ['create', 'update'],
-				'message' => $t('Need a category.', ['scope' => 'cms_banner'])
+				'message' => $t('Need a region.', ['scope' => 'cms_banner'])
 			]
 		];
 

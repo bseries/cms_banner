@@ -69,8 +69,10 @@ $this->set([
 			<div class="grid-column-left">
 			</div>
 			<div class="grid-column-right">
-				<?= $this->form->field('category', ['type' => 'text', 'label' => $t('Category'), 'value' => $item->category ?: 'default']) ?>
-				<div class="help"><?= $t('Category can be an abstract name by which you want to group banners or indicate the location of the banner group on the site.') ?></div>
+				<?= $this->form->field('region', [
+					'type' => 'text', 'label' => $t('Region')
+				]) ?>
+				<div class="help"><?= $t('Banners in the same region are grouped together.') ?></div>
 
 				<?= $this->form->field('url', [
 					'type' => 'text',

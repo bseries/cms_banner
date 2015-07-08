@@ -21,7 +21,7 @@ $this->set([
 	</div>
 
 	<div class="help">
-		<?= $t('Banners can be used as static banners or - when grouped - as a slideshow anywhere on your site. The name of the group gives you a hint about the location of the banner.') ?>
+		<?= $t('Banners can be used as static banners or - when grouped - i.e. as a slideshow anywhere on your site.') ?>
 		<?= $t('You can set the order of the banners manually by dragging and dropping the rows in the table below.') ?>
 	</div>
 
@@ -32,7 +32,7 @@ $this->set([
 					<td class="flag"><?= $t('publ.?') ?>
 					<td class="media">
 					<td class="emphasize"><?= $t('Title') ?>
-					<td><?= $t('Group') ?>
+					<td><?= $t('Region') ?>
 					<td class="date modified"><?= $t('Modified') ?>
 					<?php if ($useOwner): ?>
 						<td class="user"><?= $t('Owner') ?>
@@ -50,7 +50,7 @@ $this->set([
 							]) ?>
 						<?php endif ?>
 					<td class="emphasize"><?= $item->title ?: '–' ?>
-					<td><?= $item->category ?>
+					<td><?= $item->region ?>
 					<td class="date modified">
 						<time datetime="<?= $this->date->format($item->modified, 'w3c') ?>">
 							<?= $this->date->format($item->modified, 'date') ?>
