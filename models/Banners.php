@@ -23,7 +23,7 @@ class Banners extends \base_core\models\Base {
 		]
 	];
 
-	protected static $_actsAs = [
+	public $actsAs = [
 		'base_core\extensions\data\behavior\Ownable',
 		'base_media\extensions\data\behavior\Coupler' => [
 			'bindings' => [
