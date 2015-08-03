@@ -57,7 +57,7 @@ $this->set([
 						</time>
 					<?php if ($useOwner): ?>
 						<td class="user">
-							<?= $item->owner()->name ?>
+							<?= $this->user->link($item->owner()) ?>
 					<?php endif ?>
 					<td class="actions">
 						<?= $this->html->link($t('delete'), ['id' => $item->id, 'action' => 'delete', 'library' => 'cms_banner'], ['class' => 'button delete']) ?>
