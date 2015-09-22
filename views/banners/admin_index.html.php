@@ -20,11 +20,6 @@ $this->set([
 		<?= $this->html->link($t('banner'), ['action' => 'add', 'library' => 'cms_banner'], ['class' => 'button add']) ?>
 	</div>
 
-	<div class="help">
-		<?= $t('Banners can be used as static banners or - when grouped - i.e. as a slideshow anywhere on your site.') ?>
-		<?= $t('You can set the order of the banners manually by dragging and dropping the rows in the table below.') ?>
-	</div>
-
 	<?php if ($data->count()): ?>
 		<table>
 			<thead>
@@ -68,4 +63,10 @@ $this->set([
 	<?php else: ?>
 		<div class="none-available"><?= $t('No items available, yet.') ?></div>
 	<?php endif ?>
+
+	<div class="help">
+		<?= $t('Banners can be used as static banners or - when grouped - i.e. as a slideshow anywhere on your site.') ?>
+		<?= $t('You can set the order of the banners manually by dragging and dropping the rows in the table below.') ?>
+	</div>
+
 </article>
