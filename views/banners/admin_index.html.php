@@ -64,7 +64,7 @@ $this->set([
 		<div class="none-available"><?= $t('No items available, yet.') ?></div>
 	<?php endif ?>
 
-	<div class="help">
+	<div class="bottom-help">
 		<?= $t('Banners can be used as static banners or - when grouped - i.e. as a slideshow anywhere on your site.') ?>
 		<?= $t('You can set the order of the banners manually by dragging and dropping the rows in the table below.') ?>
 	</div>
