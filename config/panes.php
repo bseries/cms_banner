@@ -22,7 +22,7 @@ use lithium\g11n\Message;
 
 extract(Message::aliases());
 
-Panes::register('authoring.banners', [
+Panes::register('cms.banners', [
 	'title' => $t('Banners', ['scope' => 'cms_banner']),
 	'url' => ['controller' => 'banners', 'action' => 'index', 'library' => 'cms_banner', 'admin' => true],
 	'weight' => 50
