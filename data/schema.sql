@@ -3,7 +3,7 @@ CREATE TABLE `banners` (
   `owner_id` int(11) unsigned NOT NULL,
   `cover_media_id` int(11) unsigned NOT NULL,
   `order` int(11) unsigned NOT NULL,
-  `category` varchar(100) NOT NULL DEFAULT '',
+  `region` varchar(100) NOT NULL DEFAULT 'default',
   `title` varchar(250) DEFAULT '',
   `body` text,
   `url` varchar(250) DEFAULT NULL,
@@ -13,6 +13,6 @@ CREATE TABLE `banners` (
   PRIMARY KEY (`id`),
   KEY `cover_media_id` (`cover_media_id`),
   KEY `order` (`order`),
-  KEY `category` (`category`),
+  KEY `category` (`region`),
   KEY `is_published` (`is_published`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
