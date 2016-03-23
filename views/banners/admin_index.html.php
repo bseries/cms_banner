@@ -32,6 +32,9 @@ $this->set([
 					<?php if ($useOwner): ?>
 						<td class="user"><?= $t('Owner') ?>
 					<?php endif ?>
+					<?php if ($useSites): ?>
+						<td data-sort="site" class="table-sort"><?= $t('Site') ?>
+					<?php endif ?>
 					<td class="actions">
 			</thead>
 			<tbody class="use-manual-sorting">
@@ -53,6 +56,10 @@ $this->set([
 					<?php if ($useOwner): ?>
 						<td class="user">
 							<?= $this->user->link($item->owner()) ?>
+					<?php endif ?>
+					<?php if ($useSites): ?>
+						<td>
+							<?= $item->site ?: '-' ?>
 					<?php endif ?>
 					<td class="actions">
 						<?= $this->html->link($item->is_published ? $t('unpublish') : $t('publish'), ['id' => $item->id, 'action' => $item->is_published ? 'unpublish': 'publish', 'library' => 'cms_banner'], ['class' => 'button']) ?>

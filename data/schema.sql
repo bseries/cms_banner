@@ -1,6 +1,7 @@
 CREATE TABLE `banners` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `owner_id` int(11) unsigned NOT NULL,
+  `site` varchar(50) DEFAULT NULL,
   `cover_media_id` int(11) unsigned NOT NULL,
   `order` int(11) unsigned NOT NULL,
   `region` varchar(100) NOT NULL DEFAULT 'default',

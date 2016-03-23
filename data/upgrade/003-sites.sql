@@ -1,0 +1,1 @@
+ALTER TABLE `banners` ADD `site` VARCHAR(50)  NULL  DEFAULT NULL  AFTER `owner_id`;
