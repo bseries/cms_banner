@@ -129,7 +129,7 @@ msgstr "öffnen"
 
 #: views/banners/admin_index.html.php:71
 msgid "No items available, yet."
-msgstr "Es sind noch keine Object verfügbar."
+msgstr "Es sind noch keine Einträge verfügbar."
 
 #: views/banners/admin_index.html.php:75
 msgid ""
