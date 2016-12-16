@@ -52,7 +52,8 @@ class Banners extends \base_core\models\Base {
 				'Owner.name',
 				'title',
 				'category',
-				'modified'
+				'modified',
+				'site'
 			]
 		]
 	];
