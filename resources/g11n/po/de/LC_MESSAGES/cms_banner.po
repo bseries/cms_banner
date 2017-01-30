@@ -52,7 +52,7 @@ msgstr "Zugriff"
 
 #: views/banners/admin_form.html.php:36 views/banners/admin_index.html.php:33
 msgid "Owner"
-msgstr "Besitzer"
+msgstr "Eigentümer"
 
 #: views/banners/admin_form.html.php:44
 msgid "Sites"
