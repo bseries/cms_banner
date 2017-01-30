@@ -31,6 +31,8 @@ class BannersController extends \base_core\controllers\BaseController {
 	use \base_core\controllers\AdminOrderTrait;
 	use \base_core\controllers\AdminPublishTrait;
 
+	use \base_core\controllers\UsersTrait;
+
 	protected function _selects($item = null) {
 		$regions = Banners::find('all', [
 			'fields' => ['DISTINCT region as region']
