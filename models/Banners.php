@@ -50,6 +50,7 @@ class Banners extends \base_core\models\Base {
 		'base_core\extensions\data\behavior\Searchable' => [
 			'fields' => [
 				'Owner.name',
+				'Owner.number',
 				'title',
 				'category',
 				'modified',
