@@ -53,7 +53,7 @@ class Banners extends \base_core\models\Base {
 
 	public static function init() {
 		extract(Message::aliases());
-		$model = static::_object();
+		$model = static::object();
 
 		$model->validates['cover_media_id'] = [
 			[
