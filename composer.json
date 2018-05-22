@@ -8,7 +8,7 @@
         "bseries/base_core": "1.5.*@dev",
         "bseries/base_media": "1.5.*@dev",
         "bseries/cms_core": "1.5.*@dev",
-        "unionofrad/lithium": "^1.1",
+        "unionofrad/lithium": "^1.2",
         "davidpersson/li3_translate": "^2.1@dev",
         "composer/installers": "1.*@stable"
     }
