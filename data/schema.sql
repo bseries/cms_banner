@@ -16,4 +16,4 @@ CREATE TABLE `banners` (
   KEY `order` (`order`),
   KEY `category` (`region`),
   KEY `is_published` (`is_published`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
