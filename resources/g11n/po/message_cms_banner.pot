@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cms_banner 1.0\n"
 "Report-Msgid-Bugs-To: info@atelierdisko.de\n"
-"POT-Creation-Date: 2016-11-01 10:15+0100\n"
+"POT-Creation-Date: 2018-07-12 12:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: config/panes.php:26 config/widgets.php:29
+#: config/panes.php:18 config/widgets.php:21
 msgid "Banners"
 msgstr ""
 
-#: models/Banners.php:68
+#: models/Banners.php:62
 msgid "You must select on medium."
 msgstr ""
 
-#: models/Banners.php:75
+#: models/Banners.php:69
 msgid "Need a region."
 msgstr ""
 
@@ -132,7 +132,7 @@ msgstr ""
 
 #: views/banners/admin_index.html.php:75
 msgid ""
-"Banners can be used as static banners or - when grouped - i.e. as a "
+"Banners can be used as static banners or – when grouped – i.e. as a "
 "slideshow anywhere on your site."
 msgstr ""
 
