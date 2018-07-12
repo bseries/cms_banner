@@ -133,10 +133,10 @@ msgstr "Es sind noch keine Einträge verfügbar."
 
 #: views/banners/admin_index.html.php:75
 msgid ""
-"Banners can be used as static banners or - when grouped - i.e. as a "
+"Banners can be used as static banners or – when grouped – i.e. as a "
 "slideshow anywhere on your site."
 msgstr ""
-"Banner können als statische Banner oder - wenn sie gruppiert sind - als "
+"Banner können als statische Banner oder – wenn sie gruppiert sind – als "
 "Slideshow überall innerhalb der Site benutzt werden."
 
 #: views/banners/admin_index.html.php:76
