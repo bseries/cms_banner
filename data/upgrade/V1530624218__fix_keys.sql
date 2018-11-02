@@ -1,2 +1,2 @@
-ALTER TABLE `banners` DROP INDEX `category`;
+ALTER TABLE `banners` DROP INDEX IF EXISTS `category`;
 
